@@ -34,23 +34,26 @@
             <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <div class="form__container">
               <fieldset class="form__fieldset">
-                <label class="form__label">Имя:*
+                <label class="form__label">
+                  <span class="form__label-text">Имя:*</span>
                   <input type="text" name="name" required="required" class="form__input form__input--name" placeholder="Барсик">
                 </label>
-                <label class="form__label">Вес (кг):*
+                <label class="form__label">
+                  <span class="form__label-text">Вес (кг):*</span>
                   <input type="number" name="weight" required="required" class="form__input form__input--weight" placeholder="7">
                 </label>
-                <label class="form__label">Возраст (лет):
+                <label class="form__label">
+                  <span class="form__label-text">Возраст (лет):</span>
                   <input type="number" name="age" class="form__input form__input--age" placeholder="7">
                 </label>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--target">
                 <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton visually-hidden" checked>
-                <label for="weight-loss" class="form__radio-label">Похудение</label>
+                <label for="weight-loss" class="form__radio-label"><span class="form__radio-text">Похудение</span></label>
                 <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton visually-hidden">
-                <label for="weight-gain" class="form__radio-label">Набор массы</label>
+                <label for="weight-gain" class="form__radio-label"><span class="form__radio-text">Набор массы</span></label>
                 <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton visually-hidden">
-                <label for="target-none" class="form__radio-label">Не знаю (нужен ваш совет)</label>
+                <label for="target-none" class="form__radio-label"><span class="form__radio-text">Не знаю (нужен ваш совет)</span></label>
               </fieldset>
             </div>
             <fieldset class="form__fieldset form__fieldset--contacts">
@@ -58,10 +61,12 @@
                 <p>Контактные данные (владельца кота)</p>
               </legend>
               <div class="form__container">
-                <label class="form__label form__label--email">E-mail:*
+                <label class="form__label form__label--email">
+                  <span class="form__label-text">E-mail:*</span>
                   <input type="email" required="required" name="email" class="form__input" placeholder="kuklachev@gmail.com">
                 </label>
-                <label class="form__label form__label--phone">Телефон:*
+                <label class="form__label form__label--phone">
+                  <span class="form__label-text">Телефон:*</span>
                   <input type="text" name="phone" required="required" class="form__input" placeholder="8 (960) 900-60-90">
                 </label>
               </div>
@@ -77,14 +82,22 @@
                 <span>Дополнительно</span>
               </legend>
               <div class="form__fieldset-wrapper">
-                <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox visually-hidden" checked>
-                <label for="sweetener" class="form__checkbox-label">Сахарозаменитель</label>
-                <input type="checkbox" name="water" id="water" class="form__checkbox visually-hidden">
-                <label for="water" class="form__checkbox-label">Питьевая вода</label>
-                <input type="checkbox" name="milk" id="milk" class="form__checkbox visually-hidden">
-                <label for="milk" class="form__checkbox-label">Молоко</label>
-                <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox visually-hidden">
-                <label for="vitamins" class="form__checkbox-label">Витамины</label>
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox visually-hidden" checked>
+                  <label for="sweetener" class="form__checkbox-label"><span class="form__checkbox-text">Сахарозаменитель</span></label>
+                </div>
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" name="water" id="water" class="form__checkbox visually-hidden">
+                  <label for="water" class="form__checkbox-label"><span class="form__checkbox-text">Питьевая вода</span></label>
+                </div>
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" name="milk" id="milk" class="form__checkbox visually-hidden">
+                  <label for="milk" class="form__checkbox-label"><span class="form__checkbox-text">Молоко</span></label>
+                </div>
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox visually-hidden">
+                  <label for="vitamins" class="form__checkbox-label"><span class="form__checkbox-text">Витамины</span></label>
+                </div>
               </div>
             </fieldset>
             <div class="form__button-wrapper">
