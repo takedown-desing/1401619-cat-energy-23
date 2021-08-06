@@ -9,3 +9,24 @@
   font-weight: 400;
   line-height: 18px;
 }
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.footer__block-logo {
+  padding: 0 96px;
+}
+
+.footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+}

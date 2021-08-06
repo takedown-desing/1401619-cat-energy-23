@@ -1,11 +1,38 @@
 .page-header {
   color: @text-color;
   background-color: @basic_white;
+  min-width: 280px;
+}
+
+@media (min-width: @desktop) {
+  .page-header__wrapper {
+    background-image: url("../img/index-background-desktop.jpg");
+    min-height: 696px;
+    background-color: @basic_green;
+    background-position: top 100% right 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 492px;
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .page-header__toggle {
   width: 24px;
   height: 16px;
+}
+
+@media (min-width: @tablet) {
+  .page-header__toggle {
+    display: none;
+  }
 }
 
 .page-header__logo {

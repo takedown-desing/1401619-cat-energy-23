@@ -2,6 +2,32 @@
   background-color: @basic_white;
 }
 
+.holder__wrapper {
+  margin-top: 22px;
+
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.holder__item {
+  background-color: @basic_grey;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+
+  @media (min-width: @tablet) {
+    height: 372px;
+  }
+
+  @media (min-width: @desktop) {
+    justify-content: space-between;
+    width: 570px;
+    height: 374px;
+  }
+}
+
 .holder__title {
   font-size: 24px;
   font-style: normal;
@@ -9,6 +35,11 @@
   line-height: 37px;
   color: @text-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .holder__text {
@@ -18,10 +49,49 @@
   font-weight: 400;
   line-height: 18px;
   color: @text-color;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .holder__link {
   color: @text-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
+.holder__image-slim {
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: @tablet) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.holder__image-pro {
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: @tablet) {
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 134px;
+    height: 106px;
+  }
+}
