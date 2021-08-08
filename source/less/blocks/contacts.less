@@ -1,5 +1,20 @@
 .contacts {
   background: @basic_white;
+
+  @media (min-width: @desktop) {
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop) {
+  .contacts__wrapper {
+    position: absolute;
+    background-color: @basic_white;
+    width: 570px;
+    height: 201px;
+    left: 110px;
+    top: 95px;
+  }
 }
 
 .contacts__title {
@@ -41,10 +56,8 @@
 
 .contacts__map {
   width: 100%;
-}
 
-@media (min-width: @tablet) and (min-width: @desktop) {
-  .contacts__map {
+  @media (min-width: @tablet) and (min-width: @desktop) {
     height: 400px;
   }
 }

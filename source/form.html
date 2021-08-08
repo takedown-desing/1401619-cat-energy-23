@@ -10,21 +10,21 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo">
+          <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
+        </a>
         <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link-form" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог Продукции</a>
+              <a class="site-list__link-form" href="catalog.html">Каталог Продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор Программы</a>
+              <a class="site-list__link-form" href="form.html">Подбор Программы</a>
             </li>
           </ul>
         </div>
@@ -52,11 +52,11 @@
                 </label>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--target">
-                <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton visually-hidden" checked>
+                <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton" checked>
                 <label for="weight-loss" class="form__radio-label"><span class="form__radio-text">Похудение</span></label>
-                <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton visually-hidden">
+                <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton">
                 <label for="weight-gain" class="form__radio-label"><span class="form__radio-text">Набор массы</span></label>
-                <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton visually-hidden">
+                <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton">
                 <label for="target-none" class="form__radio-label"><span class="form__radio-text">Не знаю (нужен ваш совет)</span></label>
               </fieldset>
             </div>
@@ -87,15 +87,15 @@
               </legend>
               <div class="form__fieldset-wrapper">
                 <div class="form__checkbox-wrapper">
-                  <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox visually-hidden" checked>
+                  <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox" checked>
                   <label for="sweetener" class="form__checkbox-label"><span class="form__checkbox-text">Сахарозаменитель</span></label>
                 </div>
                 <div class="form__checkbox-wrapper">
-                  <input type="checkbox" name="water" id="water" class="form__checkbox visually-hidden">
+                  <input type="checkbox" name="water" id="water" class="form__checkbox">
                   <label for="water" class="form__checkbox-label"><span class="form__checkbox-text">Питьевая вода</span></label>
                 </div>
                 <div class="form__checkbox-wrapper">
-                  <input type="checkbox" name="milk" id="milk" class="form__checkbox visually-hidden">
+                  <input type="checkbox" name="milk" id="milk" class="form__checkbox">
                   <label for="milk" class="form__checkbox-label"><span class="form__checkbox-text">Молоко</span></label>
                 </div>
                 <div class="form__checkbox-wrapper">
@@ -121,7 +121,10 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map"><img src="img/map-mobile.jpg" alt="карта"></div>
+        <div class="contacts__map"><iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
+          frameborder="0" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe></div>
       </section>
     </main>
     <footer class="footer">
