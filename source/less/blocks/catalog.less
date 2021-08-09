@@ -1,3 +1,9 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .catalog__caption {
   color: @text-color-unusual;
   font-size: 16px;
@@ -20,4 +26,16 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.catalog__item {
+  @media (min-width: @tablet) {
+    width: 324px;
+    height: 511px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 245px;
+    height: 511px;
+  }
 }

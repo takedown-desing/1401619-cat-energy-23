@@ -18,6 +18,12 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .goods__text {
@@ -32,4 +38,33 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.goods__promo {
+  @media (min-width: @tablet) {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.goods__gift-cat {
+  @media (min-width: @tablet) {
+    .visually-hidden();
+  }
+
+  @media (min-width: @desktop) {
+    background-image: url("../img/gift-photo-mobile1.jpg");
+  }
+}
+
+.goods__wrapper {
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -1,5 +1,15 @@
 .form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet) {
+  .form__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .form__text {
@@ -12,6 +22,18 @@
 
 .form__textarea {
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    width: 631px;
+    height: 174;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
+    height: 174;
+    margin: 0 auto;
+  }
 }
 
 .form__label {
@@ -63,4 +85,25 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__checkbox-wrapper {
+  width: 178px;
+  height: 30px;
+
+  @media (min-width: @tablet) {
+    width: 221px;
+    height: 40px;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }

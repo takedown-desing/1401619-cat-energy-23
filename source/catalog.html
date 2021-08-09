@@ -10,21 +10,21 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo">
+          <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
+        </a>
         <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link-form" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог Продукции</a>
+              <a class="site-list__link-form" href="catalog.html">Каталог Продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор Программы</a>
+              <a class="site-list__link-form" href="form.html">Подбор Программы</a>
             </li>
           </ul>
         </div>
@@ -240,7 +240,7 @@
             </div>
             <div class="catalog__item">
               <a href="#">
-                  <img src="img/plus.svg" alt="показать еще" class="product__image">
+                <img src="img/plus.svg" alt="показать еще" class="product__image">
               </a>
               <h3 class="catalog__caption">Показать еще 100500 товаров</h3>
               <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
@@ -249,8 +249,8 @@
           </div>
         </section>
         <section class="page-main__goods goods">
+          <h2 class="goods__title">Дополнительные товары</h2>
           <div class="goods__wrapper">
-            <h2 class="goods__title">Дополнительные товары</h2>
             <div class="goods__catalog">
               <div class="goods__item">
                 <div class="goods-products">
@@ -285,7 +285,7 @@
               <div class="goods__item">
                 <div class="goods-products">
                   <h3 class="goods-products__name">Витамины</h3>
-                  <div class="goods-products__properties">
+                  <div class="goods-products__subject">
                     <p class="goods-products__subject-pack">1 упаковка (30 г)</p>
                     <p class="goods-products__subject-pack">300 Р.</p>
                   </div>
@@ -295,7 +295,7 @@
             </div>
             <div class="goods__promo">
               <img src="img/icon_gift.svg" alt="подарок для кота" class="goods__gift">
-              <img src="img/gift-photo-mobile 1.jpg" alt="подарок для кота" class="goods__gift-cat">
+              <img src="img/gift-photo-mobile1.jpg" alt="подарок для кота" class="goods__gift-cat visually-hidden">
               <p class="goods__text">Закажите все и получите чехол для кота в подарок!</p>
             </div>
           </div>
@@ -313,7 +313,10 @@
             </div>
           </div>
           <div class="contacts__map">
-            <img src="img/map-mobile.jpg" alt="карта">
+            <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
+            frameborder="0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
           </div>
         </section>
       </div>
