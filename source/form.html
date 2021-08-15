@@ -11,24 +11,26 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="page-header__logo">
-          <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
-        </a>
-        <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
+          <a class="page-header__logo">
+            <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
+          </a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link-form" href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link-form" href="catalog.html">Каталог Продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог Продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link-form" href="form.html">Подбор Программы</a>
+              <a class="site-list__link" href="form.html">Подбор Программы</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="page-header__inner">
+        <button class="page-header__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
@@ -128,37 +130,35 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer__wrapper">
-          <div class="footer__block-logo">
-            <a href="index.html" class="footer__logo">
-              <h3 class="visually-hidden">Cat Energy</h3>
-              <img src="img/footer-logo2.svg" alt="">
+      <div class="footer__wrapper">
+        <div class="footer__block-logo">
+          <a href="index.html" class="footer__logo">
+            <h3 class="visually-hidden">Cat Energy</h3>
+            <img src="img/footer-logo2.svg" alt="лого футер">
+          </a>
+        </div>
+        <ul class="footer__list socialnetworks-list">
+          <li class="socialnetworks-list__item">
+            <a href="https://vk.com/" class="socialnetworks-list__link">
+              <img src="img/icon_vkontakte.svg" alt="vk">
             </a>
-          </div>
-          <ul class="footer__list socialnetworks-list">
-            <li class="socialnetworks-list__item">
-              <a href="https://vk.com/" class="socialnetworks-list__link">
-                <img src="img/icon_vkontakte.svg" alt="vk">
-              </a>
-            </li>
-            <li class="socialnetworks-list__item">
-              <a href="https://www.instagram.com/" class="socialnetworks-list__link">
-                <img src="img/icon_instagram.svg" alt="instagram">
-              </a>
-            </li>
-            <li class="socialnetworks-list__item">
-              <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
-                <img src="img/icon_facebook.svg" alt="facebook">
-              </a>
-            </li>
-          </ul>
-          <div class="footer__copyright">
-            <a class="footer__copyright-link" href="https://htmlacademy.ru">
-              <h3 class="footer__title">HTML Academy</h3>
-              <img class="footer__copyright-icon" src="img/html1.svg" alt="HTML Academy">
+          </li>
+          <li class="socialnetworks-list__item">
+            <a href="https://www.instagram.com/" class="socialnetworks-list__link">
+              <img src="img/icon_instagram.svg" alt="instagram">
             </a>
-          </div>
+          </li>
+          <li class="socialnetworks-list__item">
+            <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
+              <img src="img/icon_facebook.svg" alt="facebook">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <a class="footer__copyright-link" href="https://htmlacademy.ru">
+            <h3 class="footer__title">HTML Academy</h3>
+            <img class="footer__copyright-icon" src="img/html1.svg" alt="HTML Academy">
+          </a>
         </div>
       </div>
     </footer>
