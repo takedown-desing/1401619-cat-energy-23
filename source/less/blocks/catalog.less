@@ -2,6 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .catalog__caption {
@@ -30,12 +42,12 @@
 
 .catalog__item {
   @media (min-width: @tablet) {
-    width: 324px;
-    height: 511px;
+    //width: 324px;
+    //height: 511px;
   }
 
   @media (min-width: @desktop) {
-    width: 245px;
-    height: 511px;
+    //width: 245px;
+    //height: 511px;
   }
 }

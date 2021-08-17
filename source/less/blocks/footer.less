@@ -24,9 +24,22 @@
 
 .footer__block-logo {
   padding: 0 96px;
+
+  @media (min-width: @desktop) {
+    width: 33.33%;
+  }
 }
 
 .footer__copyright-link {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__copyright {
+  @media (min-width: @desktop) {
+    width: 33.33%;
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+  }
 }

@@ -1,3 +1,18 @@
+@media (min-width: @desktop) {
+  .promo__header::before {
+    content: "";
+    background-image: url("../img/index-background-desktop.jpg");
+    position: absolute;
+    width: 50%;
+    height: 696px;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-color: #68b738;
+    background-size: cover;
+  }
+}
+
 .promo__slogan {
   color: @basic_white;
   font-size: 36px;
@@ -67,7 +82,6 @@
   }
 
   @media (min-width: @desktop) {
-    margin-top: -535px;
     background-image: url("../img/index-can-desktop.png");
     background-size: 500px 440px;
     margin-bottom: 80px;
