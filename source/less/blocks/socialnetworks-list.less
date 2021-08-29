@@ -1,6 +1,18 @@
 .socialnetworks-list {
   list-style: none;
+  width: 280px;
   display: flex;
+  border-top: solid 1px @special_grey;
+  border-bottom: solid 1px @special_grey;
+  justify-content: space-between;
+  padding: 20px 96px;
+
+  @media (min-width: @tablet) {
+    width: 33.33%;
+    border: none;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
 
   @media (min-width: @desktop) {
     width: 33.33%;

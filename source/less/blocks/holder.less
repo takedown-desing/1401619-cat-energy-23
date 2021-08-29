@@ -15,16 +15,21 @@
   background-color: @basic_grey;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: 266px;
 
   @media (min-width: @tablet) {
     height: 372px;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 
   @media (min-width: @desktop) {
     justify-content: space-between;
     width: 50%;
     height: 374px;
+    margin-right: 40px;
   }
 }
 
@@ -39,6 +44,18 @@
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
+    order: 1;
+    margin-left: 52px;
+    margin-top: 77px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @tablet) {
+    order: 2;
+    width: 206px;
+    margin-left: 210px;
+    margin-top: -115px;
+    margin-bottom: 0;
   }
 }
 
@@ -49,35 +66,108 @@
   font-weight: 400;
   line-height: 18px;
   color: @text-color;
+  padding-left: 20px;
+  padding-right: 33px;
+  position: relative;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    top: 100px;
+    left: 20px;
+    border: 1px solid @special_grey;
+  }
+
 
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
+    order: 2;
+    width: 340px;
+    height: 96px;
+    margin-left: 52px;
+    margin-bottom: 48px;
+    padding: 0;
+
+    &::after {
+      content: "";
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    order: 3;
+    width: 467px;
+    margin-bottom: -30px;
   }
 }
 
 .holder__link {
   color: @text-color;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  position: relative;
+  margin-right: 150px;
+  order: 3;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+    left: 90px;
+    top: 2px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../img/indicator_mobile.svg");
+  }
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 52px;
+
+    &::after {
+      content: "";
+      width: 24px;
+      height: 11px;
+      left: 115px;
+      top: 10px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url("../img/indicator_mobile.svg");
+    }
+  }
+
+  @media (min-width: @desktop) {
+    order: 4;
+    margin-bottom: 55px;
   }
 }
 
 .holder__image-slim {
   width: 50px;
   height: 53px;
+  margin-top: 20px;
 
   @media (min-width: @tablet) {
     width: 200px;
     height: 211px;
+    order: 4;
+    margin-top: 81px;
+    margin-right: 62px;
   }
 
   @media (min-width: @desktop) {
     width: 100px;
     height: 106px;
+    order: 1;
+    margin-top: 42px;
+    margin-left: 52px;
+    margin-right: 0;
   }
 }
 
@@ -88,10 +178,17 @@
   @media (min-width: @tablet) {
     width: 268px;
     height: 200px;
+    order: 4;
+    margin-top: 81px;
+    margin-right: 62px;
   }
 
   @media (min-width: @desktop) {
+    order: 1;
     width: 134px;
-    height: 106px;
+    height: 100px;
+    margin-top: 42px;
+    margin-left: 52px;
+    margin-right: 0;
   }
 }
