@@ -21,9 +21,15 @@
 
   @media (min-width: @tablet) {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 
@@ -31,10 +37,14 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 
 
   &--leaf {
     background-image: url("../img/leaflet-mobile.svg");
+    padding-right: 20px;
   }
 
   &--powder {
@@ -43,30 +53,34 @@
 
   &--cutlery {
     background-image: url("../img/cutlery-mobile.svg");
+    padding-right: 17px;
   }
 
   &--time {
     background-image: url("../img/clock-mobile.svg");
   }
-}
 
-@media (min-width: @tablet) {
-  width: 100%;
 
-  .programs__item {
+  @media (min-width: @tablet) {
     background-size: 80px 80px;
     width: 230px;
     height: 280px;
     display: flex;
+    flex-direction: column;
     counter-reset: section;
-  }
+    position: relative;
 
-  .programs__item::before {
-    counter-increment: section;
-    content: counter(section) "";
-    font-size: 280px;
-    line-height: 280px;
-    color: @basic_grey;
+    &::before {
+      counter-increment: section;
+      content: counter(section) "";
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic_grey;
+      position: absolute;
+      left: 148px;
+      bottom: 40px;
+      opacity: 0.6;
+    }
   }
 }
 
@@ -76,11 +90,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  margin: 0;
 
   @media (min-width: @tablet) {
     width: 230px;
     height: 280px;
     font-size: 16px;
     line-height: 24px;
+    padding-top: 110px;
   }
 }

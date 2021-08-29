@@ -1,6 +1,20 @@
 .example {
   background: #eaeaea;
   color: @text-color;
+  width: 320px;
+  margin-left: -20px;
+
+  @media (min-width: @tablet) {
+    background: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop) {
+    background: #eaeaea;
+    color: @text-color;
+    width: 100%;
+  }
 }
 
 .example__title {
@@ -28,6 +42,7 @@
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
+    padding: 0;
   }
 }
 
@@ -36,6 +51,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  width: 124px;
+  height: 64px;
+  border: solid 1px @special_grey;
+  display: block;
+  padding: 14px 0 0 0;
+  text-transform: uppercase;
 
   @media (min-width: @tablet) {
     font-size: 30px;
@@ -50,6 +71,10 @@
   font-weight: 400;
   line-height: 12px;
   color: @special_dark-grey;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  top: 57px;
 
   @media (min-width: @tablet) {
     font-size: 14px;
@@ -63,10 +88,39 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 20px;
+    width: 190px;
+  }
+}
+
+.example__slider {
+  @media (min-width: @tablet) {
+    background: #eaeaea;
+    margin-left: -30px;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop) {
+    background: #eaeaea;
+    width: 768px;
+    margin: 0;
+  }
+}
+
+.example__slider-wrapper {
+  position: relative;
+
+  @media (min-width: @tablet) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url("../img/before-after-tablet.png");
+    }
   }
 }
 
@@ -84,6 +138,12 @@
   }
 }
 
+.example__slider-img {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
 .example__statistics {
   list-style-type: none;
   margin: 0;
@@ -92,8 +152,26 @@
   margin-bottom: 35px;
   padding: 0 20px;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    justify-content: space-between;
+  }
 }
 
 .example__statistics-block {
-  margin-right: 24px;
+  margin-right: 16px;
+  position: relative;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet) {
+    margin-right: 42px;
+  }
+}
+
+.example__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

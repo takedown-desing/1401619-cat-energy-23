@@ -18,10 +18,20 @@
 
 .catalog__caption {
   color: @text-color-unusual;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+  }
 }
 
 .catalog__text {
@@ -30,6 +40,15 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+  }
 }
 
 .catalog__button {
@@ -38,16 +57,53 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  width: 279px;
+  height: 40px;
+  text-transform: uppercase;
+  padding: 10px 94px 10px 94px;
+
+  @media (min-width: @tablet) {
+    width: 249px;
+    padding: 10px 79px 10px 79px;
+  }
+
+  @media (min-width: @tablet) {
+    width: 169px;
+    padding: 10px 39px 10px 39px;
+  }
 }
 
 .catalog__item {
+  border-top: solid 1px #e6e6e6;
+
   @media (min-width: @tablet) {
-    //width: 324px;
-    //height: 511px;
+    border: none;
+    width: 324px;
   }
 
   @media (min-width: @desktop) {
-    //width: 245px;
-    //height: 511px;
+    width: 245px;
+    height: 511px;
+  }
+}
+
+.catalog__inner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet) {
+    margin-top: 0;
+    border: solid 2px #e6e6e6;
+    height: 429px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  @media (min-width: @desktop) {
+    width: 245px;
+    height: 431px;
+    margin-bottom: 0;
   }
 }
