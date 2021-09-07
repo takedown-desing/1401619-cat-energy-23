@@ -4,6 +4,18 @@
   text-decoration: none;
 }
 
+.page-main__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 110px;
+  }
+}
+
 .page-main__title {
   font-size: 36px;
   font-weight: 400;
@@ -32,35 +44,39 @@
   color: @text-color;
   font-family: "Oswald", sans-serif;
   border-top: solid 1px #e6e6e6;
+  padding: 0 20px;
 
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
     border: none;
-    margin-bottom: 82px;
+    margin-bottom: 140px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop) {
     font-size: 60px;
     line-height: 60px;
+    padding: 0 110px;
   }
 }
 
 .page__body {
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  //padding: 0 20px;
+  //margin: 0 auto;
 
   @media (min-width: @tablet) {
-    width: 768px;
-    padding: 0 30px;
-    margin: 0 auto;
+    //width: 768px;
+    //padding: 0 30px;
+    //margin: 0 auto;
   }
 
   @media (min-width: @desktop) {
-    width: 1440px;
-    padding: 0 110px;
-    margin: 0 auto;
+    //width: 1440px;
+    //padding: 0 110px;
+    //margin: 0 auto;
   }
 }
 
@@ -69,6 +85,12 @@
     .visually-hidden();
   }
 }
+
+//проставить вездер размеры,
+//убрать отсупы, мрджины левые отрицательные
+//поменять картинки на нормальные для каталога и для кота
+//ползунок на планшетной версии передалелать в див и спан
+
 
 @media (min-width: @desktop) {
   .page-header__toggle {

@@ -13,6 +13,7 @@
   background-color: @basic_white;
   z-index: 2;
 
+
   @media (min-width: @tablet) {
     position: relative;
     top: auto;
@@ -26,6 +27,7 @@
 .main-nav__wrapper {
   display: flex;
   justify-content: center;
+
 
   @media (min-width: @tablet) {
     display: flex;
@@ -44,10 +46,11 @@
   height: 16px;
   position: absolute;
   top: -40px;
-  left: 250px;
+  left: 275px;
   cursor: pointer;
   border: 0;
-  background-color: @text-color;
+  padding: 0;
+  background: @basic_white;
 }
 
 @media (min-width: @tablet) {
@@ -59,48 +62,37 @@
 .main-nav--opened .main-nav__toggle {
   width: 24px;
   top: -40px;
-  left: 250px;
+  left: 275px;
   border: 2px;
   cursor: pointer;
 
-  &::before,
-  &::after {
-    content: "";
-    top: -25px;
-    left: 230px;
-    width: 24px;
-    height: 2px;
-    background-color: @text-color;
-  }
-
   &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 18px;
+    background: url("/img/close_mobile.svg") no-repeat;
   }
 }
 
 .main-nav--closed .main-nav__toggle {
   top: -40px;
-  left: 250px;
+  left: 275px;
   width: 24px;
   height: 2px;
   border: 2px;
   cursor: pointer;
-  background-color: @text-color;
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
-    top: -35px;
-    left: 250px;
-    width: 24px;
-    height: 2px;
-    border: 2px;
-    cursor: pointer;
-    background-color: @text-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("/img/hide_mobile.svg") no-repeat;
   }
 }
 
@@ -120,6 +112,5 @@
 
 .main-nav--opened .main-nav__wrapper {
   display: block;
-  width: 280px;
-  margin-left: 25px;
+  width: 320px;
 }

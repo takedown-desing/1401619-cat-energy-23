@@ -2,6 +2,22 @@
   background-color: @basic_white;
 }
 
+.programs__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 110px;
+    width: 100%;
+    border-bottom: none;
+  }
+}
+
 .programs__title {
   color: @text-color;
   font-size: 36px;
@@ -45,19 +61,35 @@
   &--leaf {
     background-image: url("../img/leaflet-mobile.svg");
     padding-right: 20px;
+
+    &::before {
+      content: "1";
+    }
   }
 
   &--powder {
     background-image: url("../img/powder-mobile.svg");
+
+    &::before {
+      content: "2";
+    }
   }
 
   &--cutlery {
     background-image: url("../img/cutlery-mobile.svg");
     padding-right: 17px;
+
+    &::before {
+      content: "3";
+    }
   }
 
   &--time {
     background-image: url("../img/clock-mobile.svg");
+
+    &::before {
+      content: "4";
+    }
   }
 
 
@@ -71,8 +103,8 @@
     position: relative;
 
     &::before {
-      counter-increment: section;
-      content: counter(section) "";
+      //counter-increment: section;
+      //content: counter(section) "";
       font-size: 280px;
       line-height: 280px;
       color: @basic_grey;

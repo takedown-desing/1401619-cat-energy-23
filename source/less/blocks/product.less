@@ -3,8 +3,10 @@
   height: 112px;
 
   @media (min-width: @tablet) {
-    width: 168px;
+    width: 100%;
     height: 200px;
+    position: absolute;
+    top: -60px;
   }
 }
 
@@ -33,7 +35,11 @@
     font-size: 20px;
     line-height: 24px;
     width: 159px;
-    padding-left: 30px;
+    margin-left: 47px;
+  }
+
+  @media (min-width: @tablet) {
+    margin-left: 15px;
   }
 }
 
@@ -91,8 +97,8 @@
     flex-direction: column;
     background: @basic_grey;
     border: solid 1px #e6e6e6;
-    margin-right: 30px;
     align-items: center;
+    margin-bottom: 150px;
   }
 }
 
@@ -102,4 +108,8 @@
 
 .product__description {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet) {
+    padding-top: 175px;
+  }
 }
