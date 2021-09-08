@@ -7,14 +7,19 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-header-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+          <img src="img/logo-header-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+        </picture>
       </a>
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><!--<img src="img/hide_mobile.svg" width="24" height="16">--><span class="visually-hidden">меню</span></button>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -140,17 +145,26 @@
         <ul class="footer__list socialnetworks-list">
           <li class="socialnetworks-list__item">
             <a href="https://vk.com/" class="socialnetworks-list__link">
-              <img src="img/icon_vkontakte.svg" alt="vk">
+              <picture>
+              <source media="(min-width: 768px)" srcset="img/icon_vkontakte-tablet.svg">
+              <img src="img/icon_vkontakte.svg" width="22" height="12" alt="vk">
+              </picture>
             </a>
           </li>
           <li class="socialnetworks-list__item">
             <a href="https://www.instagram.com/" class="socialnetworks-list__link">
-              <img src="img/icon_instagram.svg" alt="instagram">
+              <picture>
+              <source media="(min-width: 768px)" srcset="img/icon_instagram-tablet.svg">
+              <img src="img/icon_instagram.svg" width="16" height="16" alt="instagram">
+              </picture>
             </a>
           </li>
           <li class="socialnetworks-list__item">
             <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
-              <img src="img/icon_facebook.svg" alt="facebook">
+              <picture>
+              <source media="(min-width: 768px)" srcset="img/icon_facebook-tablet.svg">
+              <img src="img/icon_facebook.svg" width="16" height="16" alt="facebook">
+            </picture>
             </a>
           </li>
         </ul>

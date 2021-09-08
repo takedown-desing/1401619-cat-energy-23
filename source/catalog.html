@@ -7,14 +7,19 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-header-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+          <img src="img/logo-header-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+        </picture>
       </a>
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><!--<img src="img/hide_mobile.svg" width="24" height="16">--><span class="visually-hidden">меню</span></button>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -31,14 +36,18 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper">
+
         <h1 class="page-main__title-catalog">Каталог с продукции</h1>
         <section class="page-main__catalog">
           <div class="catalog">
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
-                  <img src="img/cat-energy-pro-500g-chicken-mobile.png" alt="Cat Energy 500 г с курицей" >
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-pro-500g-chicken-desktop@1x.png, img/cat-energy-pro-500g-chicken-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-pro-500g-chicken-tablet@1x.png, img/cat-energy-pro-500g-chicken-tablet@2x.png">
+                  <img src="img/cat-energy-pro-500g-chicken-mobile.png"  alt="Cat Energy 500 г с курицей" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -67,7 +76,11 @@
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
-                  <img src="img/cat-energy-pro-1000g-chiken-mobile.png" alt="Cat Energy 1000г с курицей" >
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-pro-1000g-chiken-desktop@1x.png 1x, img/cat-energy-pro-1000g-chiken-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-pro-1000g-chiken-tablet@1x.png 1x, img/cat-energy-pro-1000g-chiken-tablet@2x.png 2x">
+                  <img src="img/cat-energy-pro-1000g-chiken-mobile.png"  alt="Cat Energy 1000г с курицей" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -96,7 +109,11 @@
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-pro-500g-fish-desktop@1x.png 1x, img/cat-energy-pro-500g-fish-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-pro-500g-fish-tablet@1x.png 1x, img/cat-energy-pro-500g-fish-tablet@2x.png 2x">
                   <img src="img/cat-energy-pro-500g-fish-mobile.png" alt="Cat Energy 500г с рыбой" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -125,7 +142,11 @@
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
-                  <img src="img/cat-energy-pro-1000g-fish-mobile.png" alt="Cat Energy 1000г с рыбой" >
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-pro-1000g-fish-desktop@1x.png 1x, img/cat-energy-pro-1000g-fish-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-pro-1000g-fish-tablet@1x.png 1x, img/cat-energy-pro-1000g-fish-tablet@2x.png 2x">
+                  <img src="img/cat-energy-pro-1000g-fish-mobile.png"  alt="Cat Energy 1000г с рыбой" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -154,7 +175,11 @@
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-slim-500g-desktop@1x.png 1x, img/cat-energy-slim-500g-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-slim-500g-tablet@1x.png 1x, img/cat-energy-slim-500g-tablet@2x.png 2x">
                   <img src="img/cat-energy-slim-500g-mobile.png" alt="Cat Energy 500г с гречкой" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -183,7 +208,11 @@
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-slim-1000g-desktop@1x.png 1x, img/cat-energy-slim-1000g-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-slim-1000g-tablet@1x.png 1x, img/cat-energy-slim-1000g-tablet@2x.png 2x">
                   <img src="img/cat-energy-slim-1000g-mobile.png" alt="Cat Energy 1000г с гречкой" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -212,7 +241,11 @@
             <div class="catalog__item product">
               <div class="product__wrapper">
                 <a class="product__image" href="#">
+                  <picture>
+                  <source media="(min-width: 1220px)" srcset="img/cat-energy-slim-500g-riсe-desktop@1x.png 1x, img/cat-energy-slim-500g-riсe-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-energy-slim-500g-riсe-tablet@1x.png 1x, img/cat-energy-slim-500g-riсe-tablet@2x.png 2x">
                   <img src="img/cat-energy-slim-500g-riсe-mobile.png" alt="Cat Energy 500г с рисом" >
+                </picture>
                 </a>
                 <div class="product__description">
                   <a href="#" class="product__link">
@@ -319,7 +352,7 @@
             frameborder="0" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </section>
-      </div>
+
     </main>
     <footer class="footer">
       <div class="footer__wrapper">

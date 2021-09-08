@@ -4,10 +4,16 @@
 
 .holder__wrapper {
   margin-top: 22px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+  }
 
   @media (min-width: @desktop) {
     display: flex;
     flex-direction: row;
+    padding: 0 110px;
   }
 }
 
@@ -23,15 +29,18 @@
     height: 372px;
     justify-content: flex-start;
     flex-direction: column;
+    position: relative;
   }
 
   @media (min-width: @desktop) {
     justify-content: space-between;
     width: 50%;
     height: 374px;
-    margin-right: 40px;
+    margin-right: 80px;
+    position: relative;
   }
 }
+
 
 .holder__title {
   font-size: 24px;
@@ -50,12 +59,12 @@
     margin-bottom: 24px;
   }
 
-  @media (min-width: @tablet) {
+  @media (min-width: @desktop) {
     order: 2;
     width: 206px;
-    margin-left: 210px;
-    margin-top: -115px;
     margin-bottom: 0;
+    margin-left: 250px;
+    margin-top: 20px;
   }
 }
 
@@ -157,38 +166,42 @@
     width: 200px;
     height: 211px;
     order: 4;
-    margin-top: 81px;
-    margin-right: 62px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
   }
 
   @media (min-width: @desktop) {
     width: 100px;
     height: 106px;
     order: 1;
-    margin-top: 42px;
-    margin-left: 52px;
-    margin-right: 0;
+    position: absolute;
+    left: 43px;
+    top: 20px;
   }
 }
 
 .holder__image-pro {
   width: 67px;
   height: 50px;
+  margin-top: 24px;
 
   @media (min-width: @tablet) {
     width: 268px;
     height: 200px;
     order: 4;
-    margin-top: 81px;
-    margin-right: 62px;
+    position: absolute;
+    right: 25px;
+    top: 50px;
   }
 
   @media (min-width: @desktop) {
     order: 1;
     width: 134px;
     height: 100px;
-    margin-top: 42px;
-    margin-left: 52px;
     margin-right: 0;
+    position: absolute;
+    left: 43px;
+    top: 20px;
   }
 }

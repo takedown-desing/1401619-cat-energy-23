@@ -1,17 +1,6 @@
 .footer {
   background: @basic_grey;
-  width: 320px;
-  margin-left: -20px;
-
-  @media (min-width: @tablet) {
-    width: 768px;
-    margin-left: -30px;
-  }
-
-  @media (min-width: @desktop) {
-    width: 1220px;
-    margin-left: 0;
-  }
+  width: 100%;
 }
 
 .footer__title {
@@ -28,16 +17,21 @@
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+  padding: 0 20px;
 
   @media (min-width: @tablet) {
-    display: flex;
+    padding: 0 30px;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 110px;
   }
 }
 
 
 .footer__block-logo {
-  padding: 0 96px;
   margin-top: 39px;
   margin-bottom: 32px;
 
