@@ -42,13 +42,45 @@
 }
 
 
-.holder__title {
+.holder__title-slim {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 37px;
   color: @text-color;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-right: 67px;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    order: 1;
+    margin-left: 52px;
+    margin-top: 77px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop) {
+    order: 2;
+    width: 206px;
+    margin-bottom: 0;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+}
+
+.holder__title-pro {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  color: @text-color;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-right: 44px;
 
   @media (min-width: @tablet) {
     font-size: 36px;
@@ -79,12 +111,13 @@
   padding-right: 33px;
   position: relative;
   margin: 0;
+  margin-bottom: 17px;
 
   &::after {
     content: "";
     position: absolute;
     width: 240px;
-    top: 100px;
+    top: 110px;
     left: 20px;
     border: 1px solid @special_grey;
   }
@@ -120,14 +153,14 @@
   line-height: 16px;
   text-decoration: none;
   position: relative;
-  margin-right: 150px;
+  margin-right: 158px;
   order: 3;
 
   &::after {
     content: "";
     width: 24px;
     height: 11px;
-    left: 90px;
+    left: 100px;
     top: 2px;
     position: absolute;
     background-repeat: no-repeat;
@@ -161,6 +194,7 @@
   width: 50px;
   height: 53px;
   margin-top: 20px;
+  margin-left: 10px;
 
   @media (min-width: @tablet) {
     width: 200px;
@@ -185,6 +219,7 @@
   width: 67px;
   height: 50px;
   margin-top: 24px;
+  margin-left: 5px;
 
   @media (min-width: @tablet) {
     width: 268px;
