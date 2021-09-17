@@ -95,9 +95,27 @@
     height: 499px;
     z-index: 1;
     margin-top: 32px;
-    left: 1015px;
+    left: 658px;
     top: 5px;
     position: absolute;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: @desktop) {
+    &::before {
+      content: "";
+      background-image: url("../img/index-background-desktop.jpg");
+      position: absolute;
+      width: 50%;
+      height: 696px;
+      top: -90px;
+      right: 0;
+      background-repeat: no-repeat;
+      background-color: @basic_green;
+      background-size: cover;
+      z-index: 1;
+    }
   }
 }
 
@@ -123,19 +141,5 @@
     background: none;
     display: flex;
     height: 696px;
-
-    &::before {
-      content: "";
-      background-image: url("../img/index-background-desktop.jpg");
-      position: absolute;
-      width: 720px;
-      height: 696px;
-      top: -90px;
-      left: 1183px;
-      background-repeat: no-repeat;
-      background-color: @basic_green;
-      background-size: cover;
-      z-index: 1;
-    }
   }
 }
